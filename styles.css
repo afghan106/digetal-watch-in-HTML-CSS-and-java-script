@@ -1,0 +1,70 @@
+@font-face {
+  font-family: time;
+  src: url(BERNHC.TTF);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+ 
+}
+.image{
+  position: relative;
+  width: auto;
+  height: auto;
+  filter: blur(4px);
+  filter: opacity(60%);
+  filter:blur(3px) ;
+  object-fit: cover;
+}
+
+.watch {
+  font-family: time;
+    position: absolute;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+   
+}
+
+.time {
+    position: absolute;
+    color: #61dafb;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow:0 0 20px rgb(0, 0, 0);
+}
+
+#hours {
+  
+    z-index: 1; /* On top */
+  font-size: 60vh;
+  
+}
+
+#minutes {
+    z-index: 2; /* Middle */
+  font-size: 40vh;
+  
+
+}
+
+#seconds {
+    z-index: 3; /* Bottom */
+  font-size: 20vh;
+ 
+}
+
+.time:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
